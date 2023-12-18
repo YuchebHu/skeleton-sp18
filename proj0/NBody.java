@@ -25,15 +25,12 @@ public class NBody {
   }
 
   public static void main(String[] args) {
-    // if (args.length != 3) {
-    // System.err.println("Need two input double value and a filename!");
-    // }
-    // double t = Double.parseDouble(args[0]);
-    // double dt = Double.parseDouble(args[1]);
-    // String filename = args[2];
-    double t = 157788000;
-    double dt = 25000;
-    String filename = "data/planets.txt";
+    if (args.length != 3) {
+      System.err.println("Need two input double value and a filename!");
+    }
+    double t = Double.parseDouble(args[0]);
+    double dt = Double.parseDouble(args[1]);
+    String filename = args[2];
     Planet[] planets = readPlanets(filename);
     double radius = readRadius(filename);
 
