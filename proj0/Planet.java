@@ -72,7 +72,7 @@ public class Planet {
     return result;
   }
 
-  public boolean equals(Planet p) {
+  private boolean equals(Planet p) {
     return this.xxPos == p.xxPos && this.yyPos == p.yyPos && this.xxVel == p.xxVel && this.yyVel == p.yyVel
         && this.mass == p.mass && this.imgFileName.equals(p.imgFileName);
   }
