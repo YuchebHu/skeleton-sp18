@@ -1,8 +1,5 @@
 
-import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
-
-import java.lang.reflect.Array;
 
 import org.junit.Test;
 
@@ -11,8 +8,7 @@ public class ArrayDequeTest {
     @Test
     public void testaddsizeempty() {
         ArrayDeque<String> dq = new ArrayDeque<>();
-        boolean isEmpty = dq.isEmpty();
-        assertTrue(dq.isEmpty() == true);
+        assertTrue(dq.isEmpty());
 
         dq.addFirst("first");
         assertTrue(1 == dq.size());

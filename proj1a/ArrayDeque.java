@@ -27,18 +27,18 @@ public class ArrayDeque<T> {
     // }
     // }
 
-    private void resize(int capacity) {
-        if (capacity < DEFAULT_SIZE) {
-            capacity = DEFAULT_SIZE;
+    private void resize(int newCapacity) {
+        if (newCapacity < DEFAULT_SIZE) {
+            newCapacity = DEFAULT_SIZE;
         }
-        if (this.capacity == capacity) {
+        if (this.capacity == newCapacity) {
             return;
         }
-        T[] newArray = (T[]) new Object[capacity];
+        T[] newArray = (T[]) new Object[newCapacity];
         for (int i = 0; i < this.size; ++i) {
             newArray[i] = this.array[(this.begin + i + 1) % this.capacity];
         }
-        this.capacity = capacity;
+        this.capacity = newCapacity;
         this.begin = this.capacity - 1;
         this.end = this.size;
         this.array = newArray;
