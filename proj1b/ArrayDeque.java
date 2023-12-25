@@ -1,5 +1,3 @@
-package proj1b;
-
 public class ArrayDeque<T> implements Deque<T> {
 
     private static final int DEFAULT_SIZE = 8;

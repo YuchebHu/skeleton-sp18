@@ -1,5 +1,3 @@
-package proj1b;
-
 public class OffByOne implements CharacterComparator {
 
     @Override

@@ -1,5 +1,3 @@
-package proj1b;
-
 /** Deque interface. */
 public interface Deque<T> {
     void addFirst(T item);

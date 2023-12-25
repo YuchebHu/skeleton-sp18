@@ -1,5 +1,3 @@
-package proj1b;
-
 public class LinkedListDeque<T> implements Deque<T> {
     private class Node<Type> {
         Type item;
